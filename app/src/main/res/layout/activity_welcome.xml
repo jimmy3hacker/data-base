@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="AcadView"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/mukta_vaani_medium"
+        android:layout_margin="80dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/shape"
+        android:orientation="vertical"
+        android:paddingTop="135dp"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/editNameLogin"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:hint="Username"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:inputType="textPersonName"
+                />
+
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="35dp"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/editPassLogin"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:hint="Password"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:inputType="textPassword"
+                />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="85dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/btn"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:text="LOGIN"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="45dp"
+            android:textSize="16sp"
+            android:text="@string/ins"
+            android:onClick="lblAction"/>
+
+    </LinearLayout>
+</LinearLayout>
